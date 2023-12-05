@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CV Maker</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+	
+	<!-- Popup css (for Video Popup) -->
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+	
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+	<div class="top-nav">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand text-uppercase" href="index.html">CV Maker  <i class="fas fa-building"></i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-center pr-md-4" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link " href="index.html">Home </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="myresume.php">Create Now</a>
+						</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- //Navigation -->
+
+<!--Slider-->
+<div class="slider">
+	<div class="callbacks_container">
+		<ul class="rslides callbacks callbacks1" id="slider4">
+			<li>
+				<div class="slider-img1">
+					<div class="dot">
+						<div class="container">
+							<div class="slider_banner_info_w3ls">
+								<h1 class="text-uppercase mb-5">We will help you<br>to get your dream job</h1>
+								<a href="#" class="read" data-toggle="modal" data-target="#exampleModalCenter" role="button">About us </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="slider-img2">
+					<div class="dot">
+						<div class="container">
+							<div class="slider_banner_info_w3ls">
+								<h2 class="text-uppercase mb-5">Secure job<br> at MNCs</h2>
+								<a href="#" class="read" data-toggle="modal" data-target="#exampleModalCenter" role="button">About us </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="slider-img3">
+					<div class="dot">
+						<div class="container">
+							<div class="slider_banner_info_w3ls">
+								<h4 class="text-uppercase mb-5">Use our CV maker <br> get hired !</h4>
+								<a href="#" class="read" data-toggle="modal" data-target="#exampleModalCenter" role="button">About us </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="slider-img4">
+					<div class="dot">
+						<div class="container">
+							<div class="slider_banner_info_w3ls">
+								<h4 class="text-uppercase mb-5">Stand out <br>in the crowd</h4>
+								<a href="#" class="read" data-toggle="modal" data-target="#exampleModalCenter" role="button">About us </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--//Slider-->
+
+
+<!-- Vertically centered Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-uppercase text-center" id="exampleModalLongTitle"> about us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<img src="images/t1.jpg" class="img-fluid mb-3" alt="Modal Image" />
+        We are a non profit orgainisation. More than 1 million users used our cv maker and landed their dream job. You can use it for free. All the best.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Vertically centered Modal -->
+
+<!-- js-scripts -->		
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->	
+	
+	<!-- Banner Responsive slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- // Banner Responsive slider -->
+	
+	<!-- start-smoth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+							
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+	
+<!-- //js-scripts -->
+
+</body>
+</html>
