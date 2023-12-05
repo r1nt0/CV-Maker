@@ -1,0 +1,45 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 20px;
+    background: linear-gradient(to right,rgb(225, 231, 230), rgb(182, 208, 237));
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #060606;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.education,
+.experience {
+    margin-top: 20px;
+}
